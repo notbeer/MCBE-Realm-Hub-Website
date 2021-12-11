@@ -5,11 +5,10 @@ export const NavigationContainer = styled.nav`
     position: absolute;
     width: 100%;
     height: 80px;
-    top: 0px;
-    overflow-x: hidden;
     z-index: 2;
 `;
 export const NavigationContent = styled.div`
+    padding: 0px 25px 0px 25px;
     width: 100%;
     height: 80px;
     transition: all 0.4s ease-in-out;
@@ -24,6 +23,11 @@ export const NavigationContent = styled.div`
         transition: top 1s ease-in-out;
     }
 `;
+export const NavigationLogo = styled.h1`
+    position: absolute;
+    color: #fff;
+    top: 10px;
+`;
 
 const Bar = css`
     height: 4px;
@@ -35,10 +39,9 @@ const Bar = css`
 `;
 const Hamburger = styled.div<{ open: boolean }>`
     position: relative;
-    width: 25px;
-    left: ${({ open }) => open ? '180px' : '50px'};
     top: 30px;
-    margin-left: 0px;
+    margin-left: auto; 
+    width: 25px;
     cursor: pointer;
     transition: left 0.3s;
     div {
@@ -53,11 +56,6 @@ const Hamburger = styled.div<{ open: boolean }>`
         }
         &.bottom {
             transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
-        }
-    }
-    @media (max-width: 600px) {
-        & {
-            left: 5%;
         }
     }
 `;

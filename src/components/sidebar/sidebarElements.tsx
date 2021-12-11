@@ -2,18 +2,19 @@ import styled from 'styled-components';
 
 export const Sidebar = styled.div<{ open: boolean }>`
     position: fixed;
-    background-color: ${({ open }) => open ? 'rgba(23, 24, 26, 0.75)' : ''};
-    width: ${({ open }) => open ? '100%' : '0%'};
-    height: ${({ open }) => open ? '100%' : '0%'};
-    transition: background-color 0.3s ease-in-out;
+    background: rgba(24, 20, 18, 1);
+    height: 100%;
+    width: 100%;
+    top: ${({ open }) => open ? '0px' : '-1000px'};
+    transition: top 0.4s;
 `;
 export const SidebarContent = styled.div<{ open: boolean }>`
     position: relative;
     background: rgba(24, 20, 18, 1);
     height: 100%;
-    width: 220px;
-    left: 0px;
-    left: ${({ open }) => open ? '0px' : '-300px'};
+    width: 100%;
+    top: 0px;
+    top: ${({ open }) => open ? '0px' : '-300px'};
     transition: left 0.3s;
 `;
 

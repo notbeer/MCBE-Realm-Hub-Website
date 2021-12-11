@@ -46,7 +46,7 @@ export default function Footer() {
             </FooterContent>
             <FooterContact>
                 <a href="https://discord.com/invite/CpRXfygxsE" target="_blank"><i className='bx bxl-discord'/></a>
-                <a href="https://www.instagram.com/_.notbeer._" target="_blank"><i className='bx bxl-youtube'></i></a>
+                <a href="https://www.youtube.com/channel/UCMuVWe26eTTsUyY9tNZmztg" target="_blank"><i className='bx bxl-youtube'></i></a>
             </FooterContact>
             <FooterText>
                 © 2020 - {new Date().getFullYear()} <a>Realmhub<YellowSpan>.</YellowSpan>dev</a> - Official MCBE Realm Hub website.<br/>All Rights Reserved.

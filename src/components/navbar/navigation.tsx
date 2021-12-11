@@ -4,6 +4,7 @@ import Sidebar from '../sidebar/sidebar';
 import {
     NavigationContainer,
     NavigationContent,
+    NavigationLogo,
     HamburgerButton
 } from './navigationElements';
 
@@ -23,6 +24,7 @@ export default function Navigation() {
             else if(window.scrollY <= 0) setActive(false);
         });
     }, []);
+    /*
     useEffect(() => {
         const checkIfClickedOutside = (e: any) => {
             if(!open) return;
@@ -34,12 +36,13 @@ export default function Navigation() {
             document.removeEventListener("mousedown", checkIfClickedOutside);
         };
     }, [open]);
-    
+    */
 
     return (
         <NavigationContainer id="NavigationContainer">
             <Sidebar open={open}/>
             <NavigationContent {...(sticky ? { className: 'sticky' } : {})} {...(active ? { className: 'sticky active' } : {})}>
+                <NavigationLogo>RH</NavigationLogo>
                 {useWindowDimensions().width <= 600 ? <HamburgerButton open={open} setOpen={setOpen}/> : null}
             </NavigationContent>
         </NavigationContainer>
