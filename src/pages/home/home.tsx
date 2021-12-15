@@ -24,7 +24,7 @@ export default function Home() {
         <HomeContainer id="HomeContainer">
             <ScrollToTop sticky={sticky}/>
             <CssBaseline>
-                <Navigation/>
+                <Navigation activationHeight={500}/>
                 <Hero/>
                 <Content/>
                 <Footer/>

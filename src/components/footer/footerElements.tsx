@@ -4,7 +4,7 @@ export const Footer = styled.footer`
     background: #212121;
 `;
 export const FooterContent = styled.div`
-    padding: 40px 80px 0px 60px;
+    padding: 40px 80px 70px 60px;
     text-align: center;
     vertical-align: middle;
     display: flex;

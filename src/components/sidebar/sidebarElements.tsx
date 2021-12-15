@@ -6,7 +6,7 @@ export const Sidebar = styled.div<{ open: boolean }>`
     height: 100%;
     width: 100%;
     top: ${({ open }) => open ? '0px' : '-1000px'};
-    transition: top 0.4s;
+    transition: top 0.6s;
 `;
 export const SidebarContent = styled.div<{ open: boolean }>`
     position: relative;

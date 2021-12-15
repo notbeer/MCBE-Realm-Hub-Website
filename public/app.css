@@ -1,5 +1,5 @@
 :root {
-    --background: white;
+    --background: rgba(48, 48, 48, 1);
     --text-primary: black;
     --text-secondary: royalblue;
     --accent: purple;
@@ -10,9 +10,8 @@
     --text-secondary: grey;
     --accent: darkred;
 }
-
-body {
-    background: #fdd25c;
+html {
+    background: rgba(48, 48, 48, 1);
 }
 ::-webkit-scrollbar {
     width: 4px;

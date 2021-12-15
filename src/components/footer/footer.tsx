@@ -49,7 +49,7 @@ export default function Footer() {
                 <a href="https://www.youtube.com/channel/UCMuVWe26eTTsUyY9tNZmztg" target="_blank"><i className='bx bxl-youtube'></i></a>
             </FooterContact>
             <FooterText>
-                © 2020 - {new Date().getFullYear()} <a>Realmhub<YellowSpan>.</YellowSpan>dev</a> - Official MCBE Realm Hub website.<br/>All Rights Reserved.
+                © 2020 - {new Date().getFullYear()} <a>Realmhub<YellowSpan>.</YellowSpan>dev</a> - Realm development website.<br/>All Rights Reserved.
             </FooterText>
         </FooterContainer>
     );

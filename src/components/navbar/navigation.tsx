@@ -8,7 +8,7 @@ import {
     HamburgerButton
 } from './navigationElements';
 
-export default function Navigation() {
+export default function Navigation({ activationHeight }: { activationHeight: number }) {
     const [sticky, setSticky] = useState(false),
     [active, setActive] = useState(false),
     [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Navigation() {
                 setSticky(false);
                 setOpen(false);
             };
-            if(window.scrollY > 500) setActive(true);
+            if(window.scrollY > activationHeight) setActive(true);
             else if(window.scrollY <= 0) setActive(false);
         });
     }, []);

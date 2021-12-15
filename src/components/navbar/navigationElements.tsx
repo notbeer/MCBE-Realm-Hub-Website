@@ -8,10 +8,13 @@ export const NavigationContainer = styled.nav`
     z-index: 2;
 `;
 export const NavigationContent = styled.div`
-    padding: 0px 25px 0px 25px;
+    padding: 0px 50px 0px 50px;
     width: 100%;
     height: 80px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    @media (max-width: 600px) {
+        padding: 0px 35px 0px 35px;
+    }
     &.sticky {
         top: -140px;
         transition: top 0.4s ease-in-out;
@@ -27,6 +30,10 @@ export const NavigationLogo = styled.h1`
     position: absolute;
     color: #fff;
     top: 10px;
+    @media (max-width: 600px) {
+        vertical-align: middle;
+        
+    }
 `;
 
 const Bar = css`

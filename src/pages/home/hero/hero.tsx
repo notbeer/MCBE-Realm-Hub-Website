@@ -21,7 +21,7 @@ export default function Hero() {
             <Collapse in={checked}{ ...(checked ? { timeout: 1000 } : {}) }>
                 <HeroContent>
                     <HeroTitle>Realm Hub</HeroTitle>
-                    <HeroDescription>We provide you with good quality information to enhance your Realm Development for free.<br/>Wether it's commands, add-ons, or scripting we have got you covered!</HeroDescription>
+                    <HeroDescription>We provide you with documentations and pre-built utils to enhance your Realm Development for free.<br/>Wether it's commands, add-ons, or scripting we have got you covered!</HeroDescription>
                     <Scroll to="Content" smooth={true}>
                         <IconButton>
                             <DownIcon/>

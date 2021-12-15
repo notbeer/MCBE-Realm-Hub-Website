@@ -1,0 +1,45 @@
+$randomness-height: 200;
+@mixin distoration($randomness) {
+    @keyframes distoration {
+        $steps: 20;
+        @for $i from 0 through $steps {
+            #{percentage($i * (1 / $steps))} {
+                clip: rect(random($randomness) + px, 9999px, random($randomness) + px, 0);
+            }
+        }
+    }
+    @keyframes distoration-2 {
+        $steps: 20;
+        @for $i from 0 through $steps {
+            #{percentage($i * (1 / $steps))} {
+                clip: rect(random($randomness) + px, 9999px, random($randomness) + px, 0);
+            }
+        }
+    }
+}
+.glitch {
+    position: relative;
+    display: inline-block;
+    @include distoration($randomness-height);
+    &:after, &:before {
+        content: attr(data-text);
+        background: rgba(48, 48, 48, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &:after {
+        left: 2px;
+        text-shadow: -1px 0 red;
+        clip: rect(0, 900px, 0, 0);
+        animation: distoration 2s infinite linear alternate-reverse;
+    }
+    &:before {
+        left: -2px;
+        text-shadow: 1px 0 blue; 
+        clip: rect(0, 900px, 0, 0); 
+        animation: distoration-2 4s infinite linear alternate-reverse;
+    }
+}

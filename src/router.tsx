@@ -5,7 +5,7 @@ import {
 } from "react-router-dom"
 
 import Home from './pages/home/home';
-import NotFound from './pages/error/404';
+import NotFound from './pages/error/error';
 
 export default function Router() {
     return (
